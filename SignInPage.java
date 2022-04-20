@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class SignInPage {
 	
-		
+	// added as part of demo	
 		private String avactisSignInPage="http://localhost/Avactis/sign-in.php";
 		private WebDriver driver;
 		
