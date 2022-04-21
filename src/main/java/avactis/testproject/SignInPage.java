@@ -14,6 +14,7 @@ public class SignInPage {
 		@FindBy (xpath="//*[contains(text(),'Register')]")
 		private WebElement register;
 		
+				
 		public SignInPage(WebDriver driver) {
 			this.driver=driver;
 			PageFactory.initElements(driver,this);
