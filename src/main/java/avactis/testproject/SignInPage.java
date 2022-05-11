@@ -1,5 +1,7 @@
 package avactis.testproject;
 
+import java.io.IOException;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -7,10 +9,11 @@ import org.openqa.selenium.support.PageFactory;
 
 public class SignInPage {
 	
-	
+	WebDriver driver;
+	MyAccountPage myaccountpageobject;
 		
 		private String avactisSignInPage="http://localhost/Avactis/sign-in.php";
-		private WebDriver driver;
+		
 		
 		@FindBy (xpath="//*[contains(text(),'Register')]")
 		private WebElement register;
@@ -46,16 +49,9 @@ public class SignInPage {
 			return new SignInPage(driver);
 		}
 		
-		public MyAccountPage userlogin (String useremail, String userpassword)
 		
-		{
-			email.sendKeys(useremail);
-			password.sendKeys(userpassword);
-			signin.click();
-			return new MyAccountPage(driver);
-			
-		}
 		
+					
 public void signinpagetitle()
 		
 		{
@@ -63,16 +59,19 @@ public void signinpagetitle()
 			System.out.println(signinpagetitle);
 		}
 		
+public MyAccountPage userlogin (String username,String userpassword) throws IOException
+
+{
 		
-	/*	public void signin(String useremail,String userpassword)
-		{
-			String[] data=new String[2];
-				data[0]="kavi.arrora@gmail.com";
-				data[1]="sakina81#";
-			email.sendKeys(data[0]);
-			password.sendKeys(data[1]);
-		}
-		*/
+	email.sendKeys(username);
+	password.sendKeys(userpassword);
+	signin.click();
+	driver.manage().window().maximize();
+	return new MyAccountPage(driver);
+	
+	
+	
+}
 
 	}
 

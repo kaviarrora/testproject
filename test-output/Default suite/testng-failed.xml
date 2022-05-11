@@ -5,7 +5,10 @@
     <classes>
       <class name="avactis.testproject.RegistrationTest">
         <methods>
-          <include name="register"/>
+          <include name="newregistration"/>
+          <include name="beforemethod"/>
+          <include name="close"/>
+          <include name="setup"/>
         </methods>
       </class> <!-- avactis.testproject.RegistrationTest -->
     </classes>

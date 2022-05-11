@@ -3,49 +3,33 @@ package avactis.testproject;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.Properties;
 
+import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.Browser;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 
 
-public class RegistrationPage 
+public class RegistrationPage extends BaseClass
 {
 
  WebDriver driver;
+ WebDriverWait wait;
 
+ 
+ 
 
-{
-
-	Properties prop=new Properties();
-	String user;
-
-	{
-
-		try {
-			FileInputStream input=new FileInputStream("C:\\Users\\Lenovo\\eclipse-workspace\\testproject\\src\\main\\java\\avactis\\testproject\\config.properties");
-			prop.load(input);
-			user=prop.getProperty("email");
-			
-
-
-
-		}
-
-
-		catch(Exception e)
-		{
-			e.printStackTrace();
-
-		}
-	}
-	}
 
 	public RegistrationPage(WebDriver driver) {
 		this.driver=driver;
@@ -94,18 +78,27 @@ public class RegistrationPage
 	@FindBy (xpath="//*[contains (text(),'Sign Out')]")
 	public WebElement signout;	
 	
-	
 
+	@FindBy (xpath="//a[contains(text(),'Sign')]")
+	private WebElement signinlink;
+	
+	@FindBy (xpath="//*[contains(text(),'Create new account')]")
+	public WebElement createnewaccount;
+	
+	@FindBy (xpath="//*[contains(text(),'Register')]")
+	private WebElement registerclick;
+	
+	
+	
+   
+	
 	public MyAccountPage newregistration()
 	{		
-		try {
-			String filelocation="C:\\Users\\Lenovo\\eclipse-workspace\\testproject\\Testdata\\New_Registration.xlsx";
-			FileInputStream file=new FileInputStream(filelocation);
-			XSSFWorkbook wb = new XSSFWorkbook(file);
-			XSSFSheet sheet=wb.getSheet("Sheet1");
-			//int rowcount=sheet.getPhysicalNumberOfRows();
-			//System.out.println("total number of rows are" + rowcount);
-			
+		
+		driver=readexcel();
+		XSSFSheet sheet=wb.getSheet("Sheet1");
+		
+		  		  
 			String useremailid,userpassword,userretypepassword,userfirstname,userlastname,usercountry,userstate,
 			usercity,useraddress1,useraddress2,userzipcode,userphone;
 			
@@ -119,21 +112,23 @@ public class RegistrationPage
 			for(int i=1;i<=numberofrows;i++)
 									
 			{
-			for (int j=0;j<=11;j++)
-			{
+			int j=0;
 				
-			useremailid=sheet.getRow(i).getCell(j).getStringCellValue();
-			userpassword=sheet.getRow(i).getCell(j).getStringCellValue();
-			userretypepassword=sheet.getRow(i).getCell(j).getStringCellValue();
-			userfirstname=sheet.getRow(i).getCell(j).getStringCellValue();
-			userlastname=sheet.getRow(i).getCell(j).getStringCellValue();
-			usercountry=sheet.getRow(i).getCell(j).getStringCellValue();
-			userstate=sheet.getRow(i).getCell(j).getStringCellValue();
-			userzipcode=sheet.getRow(i).getCell(j).getStringCellValue();
-			usercity=sheet.getRow(i).getCell(j).getStringCellValue();
-			useraddress1=sheet.getRow(i).getCell(j).getStringCellValue();
-			useraddress2=sheet.getRow(i).getCell(j).getStringCellValue();
-			userphone=sheet.getRow(i).getCell(j).getStringCellValue();
+			useremailid=sheet.getRow(i).getCell(0).getStringCellValue();
+			System.out.println(useremailid);
+			userpassword=sheet.getRow(i).getCell(1).getStringCellValue();
+			System.out.println(userpassword);
+			userretypepassword=sheet.getRow(i).getCell(2).getStringCellValue();
+			System.out.println(userretypepassword);
+			userfirstname=sheet.getRow(i).getCell(3).getStringCellValue();
+			userlastname=sheet.getRow(i).getCell(4).getStringCellValue();
+			usercountry=sheet.getRow(i).getCell(5).getStringCellValue();
+			userstate=sheet.getRow(i).getCell(6).getStringCellValue();
+			userzipcode=sheet.getRow(i).getCell(7).getStringCellValue();
+			usercity=sheet.getRow(i).getCell(8).getStringCellValue();
+			useraddress1=sheet.getRow(i).getCell(9).getStringCellValue();
+			useraddress2=sheet.getRow(i).getCell(10).getStringCellValue();
+			userphone=sheet.getRow(i).getCell(11).getStringCellValue();
 						
 				
 			email.sendKeys(useremailid);
@@ -148,26 +143,33 @@ public class RegistrationPage
 			addressline1.sendKeys(useraddress1);
 			addressline2.sendKeys(useraddress2);
 			phone.sendKeys(userphone);
-			registerbutton.click();		
-			signout.click();
-			
-			
-			}
-			
-			
-			}
+			registerbutton.click();
+			signinlink.click();
+			registerclick.click();
 			
 			
 			
-			
-		} catch (IOException e) {
+			try {
+				Thread.sleep(10);
+			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-		return new MyAccountPage(driver);
+			//wait=new WebDriverWait(driver,Duration.ofSeconds(7));
+			System.out.println("wait 7 sec");
+			
+					
+			
+			}
+			
+			
+			return new MyAccountPage(driver);		
+		
 		
 	}
-		
+	
+
+
 			
 		public void registrationpagetitle()
 		

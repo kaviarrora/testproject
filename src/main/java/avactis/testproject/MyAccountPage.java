@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class MyAccountPage {
+public class MyAccountPage  {
 	
 	WebDriver driver;
 	
@@ -32,7 +32,8 @@ public class MyAccountPage {
 	@FindBy (xpath="//a[contains(text(),'Sport')]")
 	public WebElement Sport;
 	
-	
+	@FindBy (xpath="//*[contains (text(),'Welcome')]")
+	public WebElement welcometext;
 	
 	
 	
