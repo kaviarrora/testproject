@@ -1,0 +1,136 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "Suite",
+    "children" : [ {
+      "name" : "Test",
+      "children" : [ {
+        "name" : "avactis.testproject.RegistrationTest",
+        "children" : [ {
+          "name" : "setup",
+          "uid" : "c543504fbb202998",
+          "parentUid" : "e470b35012f9177001e15133732fc747",
+          "status" : "broken",
+          "time" : {
+            "start" : 1654674414926,
+            "stop" : 1654674414932,
+            "duration" : 6
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "newregistration",
+          "uid" : "6c3978f6958af447",
+          "parentUid" : "e470b35012f9177001e15133732fc747",
+          "status" : "failed",
+          "time" : {
+            "start" : 1654684512218,
+            "stop" : 1654684542151,
+            "duration" : 29933
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "e470b35012f9177001e15133732fc747"
+      } ],
+      "uid" : "7314231e84d67a341867b5c9d3f928d2"
+    } ],
+    "uid" : "29f4dcc45a0e26cd7c7462063cee854b"
+  }, {
+    "name" : "Default suite",
+    "children" : [ {
+      "name" : "Default test",
+      "children" : [ {
+        "name" : "avactis.testproject.SignInTest",
+        "children" : [ {
+          "name" : "setup",
+          "uid" : "1a911ca228290f25",
+          "parentUid" : "87a1b8aaa374ee5076a6144cb276cf85",
+          "status" : "broken",
+          "time" : {
+            "start" : 1654676915823,
+            "stop" : 1654676915829,
+            "duration" : 6
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "logintest",
+          "uid" : "c38e0ca8772e6e3",
+          "parentUid" : "87a1b8aaa374ee5076a6144cb276cf85",
+          "status" : "skipped",
+          "time" : {
+            "start" : 1654676916329,
+            "stop" : 1654676916344,
+            "duration" : 15
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "87a1b8aaa374ee5076a6144cb276cf85"
+      }, {
+        "name" : "avactis.testproject.Fail",
+        "children" : [ {
+          "name" : "failtest",
+          "uid" : "4f8d9d0dbc3d9169",
+          "parentUid" : "c4b6d4290001cd073b957ff89e924ac3",
+          "status" : "failed",
+          "time" : {
+            "start" : 1654758322514,
+            "stop" : 1654758322545,
+            "duration" : 31
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "c4b6d4290001cd073b957ff89e924ac3"
+      } ],
+      "uid" : "848117670d75f6868e681771989ad50e"
+    } ],
+    "uid" : "2c8837b97293ea01a164a5cd7048ad56"
+  }, {
+    "name" : "Surefire suite",
+    "children" : [ {
+      "name" : "Surefire test",
+      "children" : [ {
+        "name" : "avactis.testproject.SignInTest",
+        "children" : [ {
+          "name" : "logintest",
+          "uid" : "c2020f355e4775fe",
+          "parentUid" : "3796af8579762fc5b9e93b71f64842d7",
+          "status" : "failed",
+          "time" : {
+            "start" : 1654768652378,
+            "stop" : 1654768657960,
+            "duration" : 5582
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "kavi.arrora@gmail.com", "hello123" ]
+        }, {
+          "name" : "logintest",
+          "uid" : "19d73c6c9a44bd09",
+          "parentUid" : "3796af8579762fc5b9e93b71f64842d7",
+          "status" : "failed",
+          "time" : {
+            "start" : 1654768668632,
+            "stop" : 1654768673473,
+            "duration" : 4841
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "user1@gmail.com", "hello123" ]
+        } ],
+        "uid" : "3796af8579762fc5b9e93b71f64842d7"
+      } ],
+      "uid" : "1fcb2e6ec8e5b5e8a1f2a70b87c80b24"
+    } ],
+    "uid" : "940a09faf31371a51747026c9d178f0a"
+  } ],
+  "name" : "suites"
+}

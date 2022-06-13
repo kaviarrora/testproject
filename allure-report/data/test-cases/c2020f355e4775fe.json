@@ -1,0 +1,216 @@
+{
+  "uid" : "c2020f355e4775fe",
+  "name" : "logintest",
+  "fullName" : "avactis.testproject.SignInTest.logintest",
+  "historyId" : "641d95bab05d23362ec7f39188ab4654",
+  "time" : {
+    "start" : 1654768652378,
+    "stop" : 1654768657960,
+    "duration" : 5582
+  },
+  "description" : "This test takes two user credentials from data provider",
+  "descriptionHtml" : "<p>This test takes two user credentials from data provider</p>\n",
+  "status" : "failed",
+  "statusMessage" : "Test case failed expected [My Account] but found [Avactis Demo Store]",
+  "statusTrace" : "java.lang.AssertionError: Test case failed expected [My Account] but found [Avactis Demo Store]\r\n\tat org.testng.Assert.fail(Assert.java:110)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:1413)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:149)\r\n\tat org.testng.Assert.assertEquals(Assert.java:131)\r\n\tat org.testng.Assert.assertEquals(Assert.java:655)\r\n\tat avactis.testproject.SignInTest.logintest(SignInTest.java:69)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\r\n\tat org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)\r\n\tat org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)\r\n\tat org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)\r\n\tat org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)\r\n\tat org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)\r\n\tat org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)\r\n\tat org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\r\n\tat org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)\r\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1541)\r\n\tat org.testng.TestRunner.privateRun(TestRunner.java:808)\r\n\tat org.testng.TestRunner.run(TestRunner.java:603)\r\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:429)\r\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)\r\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)\r\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:326)\r\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)\r\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)\r\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)\r\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1169)\r\n\tat org.testng.TestNG.runSuites(TestNG.java:1092)\r\n\tat org.testng.TestNG.run(TestNG.java:1060)\r\n\tat org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:151)\r\n\tat org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:111)\r\n\tat org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)\r\n\tat org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:155)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)\r\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1654768626051,
+      "stop" : 1654768652058,
+      "duration" : 26007
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "close",
+    "time" : {
+      "start" : 1654768657991,
+      "stop" : 1654768660045,
+      "duration" : 2054
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "avactis.testproject.SignInTest"
+  }, {
+    "name" : "testClass",
+    "value" : "avactis.testproject.SignInTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "logintest"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "avactis.testproject.SignInTest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-88BCUOE"
+  }, {
+    "name" : "thread",
+    "value" : "21312@DESKTOP-88BCUOE.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "epic",
+    "value" : "This belongs to main epic"
+  }, {
+    "name" : "story",
+    "value" : "multiple login"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "kavi.arrora@gmail.com"
+  }, {
+    "name" : "arg1",
+    "value" : "hello123"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ {
+      "uid" : "2186421cb539b4bc",
+      "status" : "failed",
+      "statusDetails" : "Test case failed expected [My Account] but found [Avactis Demo Store]",
+      "time" : {
+        "start" : 1654685803667,
+        "stop" : 1654685809916,
+        "duration" : 6249
+      }
+    }, {
+      "uid" : "b68164faee7b69f4",
+      "status" : "failed",
+      "statusDetails" : "Test case failed expected [My Account] but found [Avactis Demo Store]",
+      "time" : {
+        "start" : 1654684962707,
+        "stop" : 1654684969023,
+        "duration" : 6316
+      }
+    }, {
+      "uid" : "bfb5273ed87812aa",
+      "status" : "failed",
+      "statusDetails" : "Test case failed expected [My Account] but found [Avactis Demo Store]",
+      "time" : {
+        "start" : 1654684551524,
+        "stop" : 1654684557603,
+        "duration" : 6079
+      }
+    }, {
+      "uid" : "3da29cd24a60d8f6",
+      "status" : "failed",
+      "statusDetails" : "Test case failed expected [My Account] but found [Avactis Demo Store]",
+      "time" : {
+        "start" : 1654679863522,
+        "stop" : 1654679869169,
+        "duration" : 5647
+      }
+    }, {
+      "uid" : "5a20e6a4f9ca8305",
+      "status" : "failed",
+      "statusDetails" : "Test case failed expected [My Account] but found [Avactis Demo Store]",
+      "time" : {
+        "start" : 1654677622782,
+        "stop" : 1654677628620,
+        "duration" : 5838
+      }
+    }, {
+      "uid" : "51a40b4bd9fa59b4",
+      "status" : "broken",
+      "statusDetails" : "Unable to locate element: #account_sign_in_form_email_id\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.4', revision: '535d840ee2'\nSystem info: host: 'DESKTOP-88BCUOE', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCommand: [9adca26a-6d80-41bb-97c3-099f9d83b0a5, findElement {using=id, value=account_sign_in_form_email_id}]\nCapabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 101.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220526203855, moz:debuggerAddress: localhost:53506, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 2536, moz:profile: C:\\Users\\Lenovo\\AppData\\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:53506/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 9adca26a-6d80-41bb-97c3-099f9d83b0a5",
+      "time" : {
+        "start" : 1654677292918,
+        "stop" : 1654677303255,
+        "duration" : 10337
+      }
+    }, {
+      "uid" : "c20fa24a6e714080",
+      "status" : "broken",
+      "statusDetails" : "Unable to locate element: #account_sign_in_form_email_id\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.4', revision: '535d840ee2'\nSystem info: host: 'DESKTOP-88BCUOE', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCommand: [52669a99-fc35-4ed5-817c-8461733d8b63, findElement {using=id, value=account_sign_in_form_email_id}]\nCapabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 101.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220526203855, moz:debuggerAddress: localhost:65286, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 15396, moz:profile: C:\\Users\\Lenovo\\AppData\\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:65286/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 52669a99-fc35-4ed5-817c-8461733d8b63",
+      "time" : {
+        "start" : 1654677052930,
+        "stop" : 1654677063191,
+        "duration" : 10261
+      }
+    }, {
+      "uid" : "13c0bc8d114e959",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#account_sign_in_form_email_id\"}\n  (Session info: MicrosoftEdge=102.0.1245.33)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.4', revision: '535d840ee2'\nSystem info: host: 'DESKTOP-88BCUOE', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'\nDriver info: org.openqa.selenium.edge.EdgeDriver\nCommand: [7e746508da3928e014cde29f8d1223f2, findElement {using=id, value=account_sign_in_form_email_id}]\nCapabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 102.0.1245.33, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:60324}, msedge: {msedgedriverVersion: 101.0.1210.32 (f7af80761c68..., userDataDir: C:\\Users\\Lenovo\\AppData\\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60324/devtoo..., se:cdpVersion: 102.0.1245.33, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 7e746508da3928e014cde29f8d1223f2",
+      "time" : {
+        "start" : 1654675548078,
+        "stop" : 1654675558290,
+        "duration" : 10212
+      }
+    }, {
+      "uid" : "10cb026b597e6b86",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#account_sign_in_form_email_id\"}\n  (Session info: MicrosoftEdge=102.0.1245.33)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.4', revision: '535d840ee2'\nSystem info: host: 'DESKTOP-88BCUOE', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'\nDriver info: org.openqa.selenium.edge.EdgeDriver\nCommand: [fe052830bfe99cf2e0ae190867c61434, findElement {using=id, value=account_sign_in_form_email_id}]\nCapabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 102.0.1245.33, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:60254}, msedge: {msedgedriverVersion: 101.0.1210.32 (f7af80761c68..., userDataDir: C:\\Users\\Lenovo\\AppData\\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60254/devtoo..., se:cdpVersion: 102.0.1245.33, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: fe052830bfe99cf2e0ae190867c61434",
+      "time" : {
+        "start" : 1654675403445,
+        "stop" : 1654675413586,
+        "duration" : 10141
+      }
+    }, {
+      "uid" : "d12861607e483b57",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#account_sign_in_form_email_id\"}\n  (Session info: MicrosoftEdge=102.0.1245.33)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.4', revision: '535d840ee2'\nSystem info: host: 'DESKTOP-88BCUOE', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'\nDriver info: org.openqa.selenium.edge.EdgeDriver\nCommand: [fc17aafac694992742a0bc7e89856b74, findElement {using=id, value=account_sign_in_form_email_id}]\nCapabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 102.0.1245.33, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:60056}, msedge: {msedgedriverVersion: 101.0.1210.32 (f7af80761c68..., userDataDir: C:\\Users\\Lenovo\\AppData\\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60056/devtoo..., se:cdpVersion: 102.0.1245.33, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: fc17aafac694992742a0bc7e89856b74",
+      "time" : {
+        "start" : 1654674603783,
+        "stop" : 1654674614038,
+        "duration" : 10255
+      }
+    }, {
+      "uid" : "b94265ffebb89878",
+      "status" : "skipped",
+      "statusDetails" : "unknown error: net::ERR_CONNECTION_REFUSED\n  (Session info: MicrosoftEdge=102.0.1245.33)\nBuild info: version: '4.1.4', revision: '535d840ee2'\nSystem info: host: 'DESKTOP-88BCUOE', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'\nDriver info: org.openqa.selenium.edge.EdgeDriver\nCommand: [b26aced057fbac18e944fa5ea1f6b8f0, get {url=http://localhost/Avactis/}]\nCapabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 102.0.1245.33, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:59922}, msedge: {msedgedriverVersion: 101.0.1210.32 (f7af80761c68..., userDataDir: C:\\Users\\Lenovo\\AppData\\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59922/devtoo..., se:cdpVersion: 102.0.1245.33, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: b26aced057fbac18e944fa5ea1f6b8f0",
+      "time" : {
+        "start" : 1654674415681,
+        "stop" : 1654674415682,
+        "duration" : 1
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "c2020f355e4775fe.json",
+  "parameterValues" : [ "kavi.arrora@gmail.com", "hello123" ]
+}
