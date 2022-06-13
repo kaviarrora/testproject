@@ -12,22 +12,35 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+
+import io.qameta.allure.Attachment;
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Step;
+import io.qameta.allure.Story;
+
 
 public class SignInTest extends BaseClass
 
 {
 	SignInPage signinpageobject;
 	
-	//public static Logger log=LogManager.getLogger(BaseClass.class.getName());
-	@BeforeTest
+	//public static Logger log=LogManager.getLogger(SignInTest.class);
+	@BeforeMethod
 	
 	public void setup() throws IOException
 	
 	{
+		//log.info("select browser");
 		driver=selectbrowser();
 		driver=selecturl();
 	    signinpageobject=new SignInPage(driver);
@@ -35,6 +48,13 @@ public class SignInTest extends BaseClass
 	}
 	
 	@Test(dataProvider="getdata")
+	@Description("This test takes two user credentials from data provider")
+	@Step("First user {0} Second user{0}")
+	@Severity(SeverityLevel.BLOCKER)
+	@Epic("This belongs to main epic")
+	@Attachment
+	@Story("multiple login")
+	
 	
 	public void logintest (String username,String userpassword) throws IOException
 	
@@ -43,11 +63,13 @@ public class SignInTest extends BaseClass
 		MyAccountPage myaccountpageobject=new MyAccountPage(driver);
 		System.out.println(username);
 		System.out.println(userpassword);
-	    signinpageobject.userlogin(username, userpassword);        
-	     
-		   
-	   // Assert.assertFalse(myaccountpageobject.welcometext.isDisplayed(), "Login Failed");
-	    	
+	    signinpageobject.userlogin(username, userpassword);  
+	    String actual=myaccountpageobject.myaccountpagetitle();
+	    String expected="My Account";
+	    String message="Test case failed";
+	    Assert.assertEquals(actual, expected, message);
+		
+	 
 	    
 	    //log.info("signin successfull");
 	    
@@ -73,12 +95,13 @@ public class SignInTest extends BaseClass
 		return data;
 
 }
-	@AfterTest
+	@AfterMethod
 	
 	 public void close()
 	  {
 	  driver= closebrowser();
 
 	  }
+	
 	
 }

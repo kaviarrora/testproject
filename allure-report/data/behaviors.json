@@ -1,0 +1,104 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "children" : [ {
+    "name" : "setup",
+    "uid" : "c543504fbb202998",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "broken",
+    "time" : {
+      "start" : 1654674414926,
+      "stop" : 1654674414932,
+      "duration" : 6
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "setup",
+    "uid" : "1a911ca228290f25",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "broken",
+    "time" : {
+      "start" : 1654676915823,
+      "stop" : 1654676915829,
+      "duration" : 6
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "This belongs to main epic",
+    "children" : [ {
+      "name" : "multiple login",
+      "children" : [ {
+        "name" : "logintest",
+        "uid" : "c38e0ca8772e6e3",
+        "parentUid" : "7e1b90333f5a4b7b8e9528f3cbc7e672",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1654676916329,
+          "stop" : 1654676916344,
+          "duration" : 15
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "logintest",
+        "uid" : "c2020f355e4775fe",
+        "parentUid" : "7e1b90333f5a4b7b8e9528f3cbc7e672",
+        "status" : "failed",
+        "time" : {
+          "start" : 1654768652378,
+          "stop" : 1654768657960,
+          "duration" : 5582
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "kavi.arrora@gmail.com", "hello123" ]
+      }, {
+        "name" : "logintest",
+        "uid" : "19d73c6c9a44bd09",
+        "parentUid" : "7e1b90333f5a4b7b8e9528f3cbc7e672",
+        "status" : "failed",
+        "time" : {
+          "start" : 1654768668632,
+          "stop" : 1654768673473,
+          "duration" : 4841
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "user1@gmail.com", "hello123" ]
+      } ],
+      "uid" : "7e1b90333f5a4b7b8e9528f3cbc7e672"
+    } ],
+    "uid" : "767b12de8e57a4d08d6a9a3d86872889"
+  }, {
+    "name" : "newregistration",
+    "uid" : "6c3978f6958af447",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "failed",
+    "time" : {
+      "start" : 1654684512218,
+      "stop" : 1654684542151,
+      "duration" : 29933
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "failtest",
+    "uid" : "4f8d9d0dbc3d9169",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "failed",
+    "time" : {
+      "start" : 1654758322514,
+      "stop" : 1654758322545,
+      "duration" : 31
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  } ],
+  "name" : "behaviors"
+}

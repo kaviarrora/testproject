@@ -44,11 +44,12 @@ public class MyAccountPage  {
 		return new SignInPage(driver);
 	}
 	
-	public void myaccountpagetitle()
+	public String myaccountpagetitle()
 	
 	{
 		String myaccountpagetitle=driver.getTitle();
 		System.out.println(myaccountpagetitle);
+		return myaccountpagetitle;
 	}
 	
 	public void orderproducts()

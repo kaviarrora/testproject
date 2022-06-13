@@ -1,0 +1,112 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "children" : [ {
+    "name" : "avactis.testproject",
+    "children" : [ {
+      "name" : "RegistrationTest",
+      "children" : [ {
+        "name" : "setup",
+        "uid" : "c543504fbb202998",
+        "parentUid" : "106d447ca57321a3d28c31ef91c3a1af",
+        "status" : "broken",
+        "time" : {
+          "start" : 1654674414926,
+          "stop" : 1654674414932,
+          "duration" : 6
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "newregistration",
+        "uid" : "6c3978f6958af447",
+        "parentUid" : "106d447ca57321a3d28c31ef91c3a1af",
+        "status" : "failed",
+        "time" : {
+          "start" : 1654684512218,
+          "stop" : 1654684542151,
+          "duration" : 29933
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "106d447ca57321a3d28c31ef91c3a1af"
+    }, {
+      "name" : "SignInTest",
+      "children" : [ {
+        "name" : "setup",
+        "uid" : "1a911ca228290f25",
+        "parentUid" : "ad13a4dc732f56d47cbd9a0436ac2a98",
+        "status" : "broken",
+        "time" : {
+          "start" : 1654676915823,
+          "stop" : 1654676915829,
+          "duration" : 6
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "logintest",
+        "uid" : "c38e0ca8772e6e3",
+        "parentUid" : "ad13a4dc732f56d47cbd9a0436ac2a98",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1654676916329,
+          "stop" : 1654676916344,
+          "duration" : 15
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "logintest",
+        "uid" : "c2020f355e4775fe",
+        "parentUid" : "ad13a4dc732f56d47cbd9a0436ac2a98",
+        "status" : "failed",
+        "time" : {
+          "start" : 1654768652378,
+          "stop" : 1654768657960,
+          "duration" : 5582
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "kavi.arrora@gmail.com", "hello123" ]
+      }, {
+        "name" : "logintest",
+        "uid" : "19d73c6c9a44bd09",
+        "parentUid" : "ad13a4dc732f56d47cbd9a0436ac2a98",
+        "status" : "failed",
+        "time" : {
+          "start" : 1654768668632,
+          "stop" : 1654768673473,
+          "duration" : 4841
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "user1@gmail.com", "hello123" ]
+      } ],
+      "uid" : "ad13a4dc732f56d47cbd9a0436ac2a98"
+    }, {
+      "name" : "Fail",
+      "children" : [ {
+        "name" : "failtest",
+        "uid" : "4f8d9d0dbc3d9169",
+        "parentUid" : "df4fe50d6a31b142c2d5ea684597c690",
+        "status" : "failed",
+        "time" : {
+          "start" : 1654758322514,
+          "stop" : 1654758322545,
+          "duration" : 31
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "df4fe50d6a31b142c2d5ea684597c690"
+    } ],
+    "uid" : "avactis.testproject"
+  } ],
+  "name" : "packages"
+}

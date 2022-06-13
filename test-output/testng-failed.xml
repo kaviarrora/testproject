@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="avactis.testproject.RegistrationTest">
+      <class name="avactis.testproject.HomePageTest">
         <methods>
-          <include name="newregistration"/>
-          <include name="beforemethod"/>
           <include name="close"/>
           <include name="setup"/>
+          <include name="guestusershopping"/>
         </methods>
-      </class> <!-- avactis.testproject.RegistrationTest -->
+      </class> <!-- avactis.testproject.HomePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,0 +1,111 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "unknown error: net::ERR_CONNECTION_REFUSED\n  (Session info: MicrosoftEdge=102.0.1245.33)\nBuild info: version: '4.1.4', revision: '535d840ee2'\nSystem info: host: 'DESKTOP-88BCUOE', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'\nDriver info: org.openqa.selenium.edge.EdgeDriver\nCommand: [b26aced057fbac18e944fa5ea1f6b8f0, get {url=http://localhost/Avactis/}]\nCapabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 102.0.1245.33, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:59922}, msedge: {msedgedriverVersion: 101.0.1210.32 (f7af80761c68..., userDataDir: C:\\Users\\Lenovo\\AppData\\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59922/devtoo..., se:cdpVersion: 102.0.1245.33, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: b26aced057fbac18e944fa5ea1f6b8f0",
+      "children" : [ {
+        "name" : "setup",
+        "uid" : "c543504fbb202998",
+        "parentUid" : "645f180fd33802bb35eea8f3199e2bf0",
+        "status" : "broken",
+        "time" : {
+          "start" : 1654674414926,
+          "stop" : 1654674414932,
+          "duration" : 6
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "645f180fd33802bb35eea8f3199e2bf0"
+    }, {
+      "name" : "Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 99\nCurrent browser version is 102.0.5005.63 with binary path C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\nBuild info: version: '4.1.4', revision: '535d840ee2'\nSystem info: host: 'DESKTOP-88BCUOE', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]",
+      "children" : [ {
+        "name" : "setup",
+        "uid" : "1a911ca228290f25",
+        "parentUid" : "871f735579207fa3b94dd7337d32458e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1654676915823,
+          "stop" : 1654676915829,
+          "duration" : 6
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "871f735579207fa3b94dd7337d32458e"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  }, {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "Registration passed expected [false] but found [true]",
+      "children" : [ {
+        "name" : "newregistration",
+        "uid" : "6c3978f6958af447",
+        "parentUid" : "e3fe799b5bcd14f9e8f337ee2f21d212",
+        "status" : "failed",
+        "time" : {
+          "start" : 1654684512218,
+          "stop" : 1654684542151,
+          "duration" : 29933
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e3fe799b5bcd14f9e8f337ee2f21d212"
+    }, {
+      "name" : "expected [true] but found [false]",
+      "children" : [ {
+        "name" : "failtest",
+        "uid" : "4f8d9d0dbc3d9169",
+        "parentUid" : "067aa11ae245eca950dc984999fefd6d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1654758322514,
+          "stop" : 1654758322545,
+          "duration" : 31
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "067aa11ae245eca950dc984999fefd6d"
+    }, {
+      "name" : "Test case failed expected [My Account] but found [Avactis Demo Store]",
+      "children" : [ {
+        "name" : "logintest",
+        "uid" : "c2020f355e4775fe",
+        "parentUid" : "380d8cd778a438ed8ae83e9e5a0fc69e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1654768652378,
+          "stop" : 1654768657960,
+          "duration" : 5582
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "kavi.arrora@gmail.com", "hello123" ]
+      }, {
+        "name" : "logintest",
+        "uid" : "19d73c6c9a44bd09",
+        "parentUid" : "380d8cd778a438ed8ae83e9e5a0fc69e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1654768668632,
+          "stop" : 1654768673473,
+          "duration" : 4841
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "user1@gmail.com", "hello123" ]
+      } ],
+      "uid" : "380d8cd778a438ed8ae83e9e5a0fc69e"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}

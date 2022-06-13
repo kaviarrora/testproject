@@ -1,0 +1,142 @@
+{
+  "bc97fa1f8be1cf9275fa690b31847832" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c38e0ca8772e6e3",
+      "status" : "skipped",
+      "statusDetails" : "Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 99\nCurrent browser version is 102.0.5005.63 with binary path C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\nBuild info: version: '4.1.4', revision: '535d840ee2'\nSystem info: host: 'DESKTOP-88BCUOE', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]",
+      "time" : {
+        "start" : 1654676916329,
+        "stop" : 1654676916344,
+        "duration" : 15
+      }
+    } ]
+  },
+  "bfc0532ceb97d256df828f674c448566" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "19d73c6c9a44bd09",
+      "status" : "failed",
+      "statusDetails" : "Test case failed expected [My Account] but found [Avactis Demo Store]",
+      "time" : {
+        "start" : 1654768668632,
+        "stop" : 1654768673473,
+        "duration" : 4841
+      }
+    } ]
+  },
+  "641d95bab05d23362ec7f39188ab4654" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c2020f355e4775fe",
+      "status" : "failed",
+      "statusDetails" : "Test case failed expected [My Account] but found [Avactis Demo Store]",
+      "time" : {
+        "start" : 1654768652378,
+        "stop" : 1654768657960,
+        "duration" : 5582
+      }
+    } ]
+  },
+  "aa039a681215d221a1412ab53b52dad9" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4f8d9d0dbc3d9169",
+      "status" : "failed",
+      "statusDetails" : "expected [true] but found [false]",
+      "time" : {
+        "start" : 1654758322514,
+        "stop" : 1654758322545,
+        "duration" : 31
+      }
+    } ]
+  },
+  "8ace8c3feaabb6de3c4b3d2c637b13ba" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c543504fbb202998",
+      "status" : "broken",
+      "statusDetails" : "unknown error: net::ERR_CONNECTION_REFUSED\n  (Session info: MicrosoftEdge=102.0.1245.33)\nBuild info: version: '4.1.4', revision: '535d840ee2'\nSystem info: host: 'DESKTOP-88BCUOE', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'\nDriver info: org.openqa.selenium.edge.EdgeDriver\nCommand: [b26aced057fbac18e944fa5ea1f6b8f0, get {url=http://localhost/Avactis/}]\nCapabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 102.0.1245.33, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:59922}, msedge: {msedgedriverVersion: 101.0.1210.32 (f7af80761c68..., userDataDir: C:\\Users\\Lenovo\\AppData\\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59922/devtoo..., se:cdpVersion: 102.0.1245.33, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: b26aced057fbac18e944fa5ea1f6b8f0",
+      "time" : {
+        "start" : 1654674414926,
+        "stop" : 1654674414932,
+        "duration" : 6
+      }
+    } ]
+  },
+  "2024afa795af5fc9aa55c965f07f3abc" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1a911ca228290f25",
+      "status" : "broken",
+      "statusDetails" : "Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 99\nCurrent browser version is 102.0.5005.63 with binary path C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\nBuild info: version: '4.1.4', revision: '535d840ee2'\nSystem info: host: 'DESKTOP-88BCUOE', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]",
+      "time" : {
+        "start" : 1654676915823,
+        "stop" : 1654676915829,
+        "duration" : 6
+      }
+    } ]
+  },
+  "fea51c23cc5c36b8390433584185669d" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6c3978f6958af447",
+      "status" : "failed",
+      "statusDetails" : "Registration passed expected [false] but found [true]",
+      "time" : {
+        "start" : 1654684512218,
+        "stop" : 1654684542151,
+        "duration" : 29933
+      }
+    } ]
+  }
+}

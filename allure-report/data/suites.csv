@@ -1,0 +1,8 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"failed","Thu Jun 09 15:27:48 IST 2022","Thu Jun 09 15:27:53 IST 2022","4841","Surefire suite","Surefire test","avactis.testproject.SignInTest","avactis.testproject.SignInTest","logintest","logintest","This test takes two user credentials from data provider"
+"failed","Wed Jun 08 16:05:12 IST 2022","Wed Jun 08 16:05:42 IST 2022","29933","Suite","Test","avactis.testproject.RegistrationTest","avactis.testproject.RegistrationTest","newregistration","newregistration",""
+"broken","Wed Jun 08 13:58:35 IST 2022","Wed Jun 08 13:58:35 IST 2022","6","Default suite","Default test","avactis.testproject.SignInTest","avactis.testproject.SignInTest","setup","setup",""
+"skipped","Wed Jun 08 13:58:36 IST 2022","Wed Jun 08 13:58:36 IST 2022","15","Default suite","Default test","avactis.testproject.SignInTest","avactis.testproject.SignInTest","logintest","logintest","This test takes two user credentials from data provider"
+"broken","Wed Jun 08 13:16:54 IST 2022","Wed Jun 08 13:16:54 IST 2022","6","Suite","Test","avactis.testproject.RegistrationTest","avactis.testproject.RegistrationTest","setup","setup",""
+"failed","Thu Jun 09 15:27:32 IST 2022","Thu Jun 09 15:27:37 IST 2022","5582","Surefire suite","Surefire test","avactis.testproject.SignInTest","avactis.testproject.SignInTest","logintest","logintest","This test takes two user credentials from data provider"
+"failed","Thu Jun 09 12:35:22 IST 2022","Thu Jun 09 12:35:22 IST 2022","31","Default suite","Default test","avactis.testproject.Fail","avactis.testproject.Fail","failtest","failtest",""

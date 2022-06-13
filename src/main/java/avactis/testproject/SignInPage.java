@@ -52,11 +52,13 @@ public class SignInPage {
 		
 		
 					
-public void signinpagetitle()
+public String signinpagetitle()
 		
 		{
 			String signinpagetitle=driver.getTitle();
-			System.out.println(signinpagetitle);
+			return signinpagetitle;
+			
+			
 		}
 		
 public MyAccountPage userlogin (String username,String userpassword) throws IOException
